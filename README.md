@@ -1,2 +1,2 @@
 # SS-Before-After-Slider
-Squarespace Before-After Image Slider
+Use the Wiki Page
