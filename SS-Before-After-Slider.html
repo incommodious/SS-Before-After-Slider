@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!--code ref: "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_image_compare"-->
 <head>
+<title>SS Before After Slider</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {box-sizing: border-box;}
@@ -52,7 +53,7 @@ function initComparisons() {
     compareImages(x[i]);
   }
   function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
+    var slider, clicked = 0, w, h;
     /*get the width and height of the img element*/
     w = img.offsetWidth;
     h = img.offsetHeight;
@@ -92,7 +93,7 @@ function initComparisons() {
       /*if the slider is no longer clicked, exit this function:*/
       if (clicked == 0) return false;
       /*get the cursor's x position:*/
-      pos = getCursorPos(e)
+      pos = getCursorPos(e);
       /*prevent the slider from being positioned outside the image:*/
       if (pos < 0) pos = 0;
       if (pos > w) pos = w;
@@ -130,12 +131,12 @@ function initComparisons() {
   <div class="img-comp-img">
     <!--Right Image*/-->
     <!--Change width and height pixles as required (Right and Left sizes should match)*/-->
-    <img src="RIGHT_IMAGE_LINK_HERE" width="600px" height="400px" object-fit="cover">
+    <img src="RIGHT_IMAGE_LINK_HERE" width="600" height="400" alt="Right comparison image" style="object-fit: cover;">
   </div>
   <div class="img-comp-img img-comp-overlay">
     <!--Left Image*/-->
     <!--Change width and height pixles as required (Right and Left sizes should match)*/-->
-    <img src="LEFT_IMAGE_LINK_HERE" width="600px" height="400px" object-fit="cover">
+    <img src="LEFT_IMAGE_LINK_HERE" width="600" height="400" alt="Left comparison image" style="object-fit: cover;">
   </div>
 </div>
 
